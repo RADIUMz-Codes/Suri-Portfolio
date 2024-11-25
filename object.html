@@ -1,0 +1,76 @@
+<!--
+  EYE FREE MODEL 3D BY Oscar creativo by OSCAR CREATIVO is licensed under Creative Commons Attribution.
+  Juvenile Teratophoneus curriei byrankinstudio is licensed under Creative Commons Attribution.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Interactive Experience</title>
+    <style>
+      /* Global Styles */
+      body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: black;
+          color: white;
+          font-family: Arial, sans-serif;
+      }
+
+      /* Title Style */
+      h1 {
+          font-size: 48px;
+          font-weight: bold;
+          color: crimson;
+          margin-bottom: 20px;
+          text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+      }
+
+      /* 3D Container */
+      #container3D {
+          width: 80%;
+          height: 60vh;
+          margin-bottom: 30px;
+      }
+
+      /* Return to Home Button Style */
+      .return-home {
+          text-decoration: none;
+          display: inline-block;
+          background: crimson;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 10px 20px;
+          border-radius: 8px;
+          border: 2px solid crimson;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          cursor: pointer;
+      }
+
+      .return-home:hover {
+          background: #fff;
+          color: crimson;
+          box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>3D Interactive Experience</h1>
+    </header>
+
+    <main>
+      <div id="container3D"></div>
+      <a href="index.html" class="return-home">Return to Home</a>
+    </main>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

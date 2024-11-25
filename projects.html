@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Gallery</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS file -->
+</head>
+<body>
+    <div class="rgb-background">
+        <h1 class="gallery-title">Project Explore</h1>
+        <div class="gallery-container">
+            <!-- Add your project images here -->
+            <div class="gallery">
+                <img src="images/IMG-20241120-WA0004.jpg" alt="Project 1">
+                <img src="images/IMG-20241120-WA0005.jpg" alt="Project 2">
+                <img src="images/IMG-20241120-WA0006.jpg" alt="Project 3">
+                <img src="images/IMG-20241120-WA0007.jpg" alt="Project 4">
+                <img src="images/IMG-20241120-WA0032.jpg" alt="Project 5">
+                <img src="images/IMG-20241120-WA0009.jpg" alt="Project 6">
+                <img src="images/IMG-20241120-WA0016.jpg" alt="Project 7">
+                <img src="images/IMG-20241120-WA0011.jpg" alt="Project 8">
+                <img src="images/IMG-20241120-WA0012.jpg" alt="Project 9">
+                <img src="images/IMG-20241120-WA0013.jpg" alt="Project 10">
+                <img src="images/IMG-20241120-WA0014.jpg" alt="Project 11">
+                <img src="images/IMG-20241120-WA0015.jpg" alt="Project 12">
+                <img src="images/IMG-20241120-WA0010.jpg" alt="Project 13">
+                <img src="images/IMG-20241120-WA0017.jpg" alt="Project 14">
+                <img src="images/IMG-20241120-WA0018.jpg" alt="Project 15">
+                <img src="images/IMG-20241120-WA0019.jpg" alt="Project 16">
+                <img src="images/IMG-20241120-WA0020.jpg" alt="Project 17">
+                <img src="images/IMG-20241120-WA0021.jpg" alt="Project 18">
+                <img src="images/IMG-20241120-WA0022.jpg" alt="Project 19">
+                <img src="images/IMG-20241120-WA0023.jpg" alt="Project 20">
+                <img src="images/IMG-20241120-WA0024.jpg" alt="Project 21">
+                <img src="images/IMG-20241120-WA0025.jpg" alt="Project 22">
+                <img src="images/IMG-20241120-WA0026.jpg" alt="Project 23">
+                <img src="images/IMG-20241120-WA0027.jpg" alt="Project 24">
+                <img src="images/IMG-20241120-WA0028.jpg" alt="Project 25">
+                <img src="images/IMG-20241120-WA0029.jpg" alt="Project 26">
+                <img src="images/IMG-20241120-WA0030.jpg" alt="Project 27">
+                <img src="images/IMG-20241120-WA0031.jpg" alt="Project 28">
+                <img src="images/IMG-20241120-WA0008.jpg" alt="Project 29">
+
+                <!-- Repeat for all 29 images -->
+                <div class="button-container">
+                    <a href="index.html" class="return-home">Return to Home</a>
+                </div>
+        
+    </div>
+    </div>
+
+    <style>
+/* Full-screen RGB light effect */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevents extra scroll bar */
+    background-color: black; /* Ensures black background */
+}
+
+/* RGB Background */
+.rgb-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure title appears at the top */
+    align-items: center;
+    overflow-y: auto; /* Allow vertical scroll if needed */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Gallery Title */
+.gallery-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: crimson;
+    margin: 20px 0; /* Space above and below the title */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    z-index: 10; /* Ensure it is above other elements */
+}
+
+/* Gallery Container */
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Masonry Layout for Gallery */
+.gallery {
+    column-count: 4;
+    column-gap: 10px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    break-inside: avoid;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Centered Button Container */
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Return to Home Button Style */
+.return-home {
+    text-decoration: none;
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.return-home:hover {
+    background: #fff;
+    color: crimson;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        column-count: 1;
+    }
+}
+
+    </style>
+
+</body>
+</html>

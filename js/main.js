@@ -89,11 +89,34 @@ window.addEventListener("resize", function () {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 
-//add mouse position listener, so we can make the eye move
-document.onmousemove = (e) => {
+// //add mouse position listener, so we can make the eye move
+// document.onmousemove = (e) => {
+//   mouseX = e.clientX;
+//   mouseY = e.clientY;
+// }
+// let mouseX, mouseY;
+let isMouseDown = false;
+
+// Listen for mouse down (when the user clicks)
+document.onmousedown = (e) => {
+  isMouseDown = true;
+  // Track mouse position when mouse is down
   mouseX = e.clientX;
   mouseY = e.clientY;
-}
+};
 
+// Listen for mouse move (when the user moves the mouse)
+document.onmousemove = (e) => {
+  if (isMouseDown) {  // Only track position if mouse button is down
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    console.log(`Mouse Position (moving with click): ${mouseX}, ${mouseY}`);
+  }
+};
+
+// Listen for mouse up (when the user releases the mouse button)
+document.onmouseup = () => {
+  isMouseDown = false;
+};
 //Start the 3D rendering
 animate();
